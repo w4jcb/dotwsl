@@ -1,0 +1,7 @@
+build-essential
+curl
+gedit
+gedit-plugin-text-size
+git
+pcmanfm
+wget
