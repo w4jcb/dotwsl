@@ -4,11 +4,11 @@ set -ux
 
 cd
 
-if [ ! -d Local-Repo/dotserver ] ; then
-  git clone https://github.com/w4jcb/dotserver.git Local-Repo/dotserver
+if [ ! -d Local-Repo/dotwsl ] ; then
+  git clone https://github.com/w4jcb/dotwsl.git Local-Repo/dotwsl
 fi
 
-cd Local-Repo/dotserver
+cd Local-Repo/dotwsl
 
 DIR=${PWD} # folder this file is in
 homedir=/home/${USER} #/home/user_name
@@ -32,9 +32,6 @@ done
     
 # Install packages I can't live without. Just put them in the text file.
 xargs -a packages.txt sudo apt install
-
-# Install pip3 style packages I can't live without.
-sudo pip3 install -r requirements.txt
 
 # Install SNAP packages I can't live without.
 xargs -a snaps.txt sudo snap install
