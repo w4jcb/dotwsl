@@ -11,7 +11,7 @@ fi
 cd Local-Repo/dotwsl
 
 DIR=${PWD} # folder this file is in
-homedir=/home/${USER} #/home/user_name
+homedir=/${USER} #/root
 
 # dotfiles directory
 dotfiledir=${DIR}
