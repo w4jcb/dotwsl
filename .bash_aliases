@@ -61,5 +61,7 @@ alias cp='cp -i'
 # Just for fun
 alias hi='echo "Hello World"'
 
+PROMPT_DIRTRIM=1
+
 # Setting my bin to the path
 export PATH="/home/carlton/bin:$PATH"
